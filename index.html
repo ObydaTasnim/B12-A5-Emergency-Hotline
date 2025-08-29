@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment5</title>
-    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -48,6 +50,27 @@
       </div>
     </div>
   </section>
+    
+  <main class=" px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      <section class="lg:col-span-3">
+        <div id="cardGrid" class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6"></div>
+      </section>
+
+      <aside class="lg:col-span-1">
+        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 h-full flex flex-col">
+          <div class="flex items-center justify-between mb-4">
+            <div class="inline-flex items-center gap-2">
+              <img src="B12-A5-Emergency-Hotline/assets/icons8-history-32.png" alt="History" class="w-5 h-5">
+              <h3 class="font-semibold">Call History</h3>
+            </div>
+            <button id="clearHistory" class="px-3 py-1.5 text-sm rounded-lg text-white" style="background-color:#00A63E;">Clear</button>
+          </div>
+          <ul id="historyList" class="space-y-3 text-sm overflow-auto grow pr-1"></ul>
+        </div>
+      </aside>
+    </div>
+  </main>
 
 
 
